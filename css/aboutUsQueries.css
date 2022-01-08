@@ -1,0 +1,200 @@
+/* ---------global changes ------------*/
+@media (max-width: 768px){
+body p, body h2{
+    text-align: center;
+}
+.a-container, .aboutUs-divider{
+    justify-content: center;
+}
+
+.bars-container__bars{
+    display: block;
+  }
+}
+/* _____________________________________ */
+
+
+
+
+
+
+
+ 
+/* _______________________________________ 
+     Para el responsive del .nav-menu: */
+@media screen and (max-width:968px) {
+    .nav{
+      position: fixed;
+    }
+    .santiagoApostol-section{
+      margin-top: 200px;
+    }
+
+    
+    .nav__img-logo-container{
+      padding-left: 20px;  /* se reduce el margin de desktop (180px) */
+      margin: 0px;
+    }
+    .nav__bars{
+      display: inline-flex;
+      padding-right: 20px;
+    }
+    .nav__menu{
+      position: fixed;
+      margin-right: 0;
+      min-width: 100%;
+      min-height: calc(100vh - 90px);
+      background: #414141;
+      top: -100vh;
+      text-align: center;
+      transition: all 0.4s;
+      flex-direction: column;
+    }
+    .nav__menu li {
+      margin: 60px 0 0 0;
+      line-height: 30px;
+    }
+    .nav__menu li:first-of-type{
+        background-color: black;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav__menu li a{
+      text-align: center;
+      margin-right: 0px;
+      font-size: 2.8rem;
+    }
+  }
+@media screen and (max-width:968px) and (orientation:landscape){
+  .nav__menu{
+    overflow: scroll;
+  }
+  .nav__menu li:last-of-type{
+    margin-bottom: 60px;
+  }
+}
+.nav__menu--show{   /* para mostrar el menu dando click*/
+  top: 90px;
+}
+
+/* _____________________________________ */
+
+
+
+
+
+
+@media (max-width: 600px){
+  /* mediaquerie for img grid gallery */
+.santiagoApostol-section__img-gallery-container{
+  grid-template-areas: 
+    "img1 img4"
+    "img2 img5"
+    "img3 img6";
+}
+
+.img-gallery-container__img1{
+grid-area: img1;
+
+}
+.img-gallery-container__img2{
+grid-area: img2;
+
+}
+.img-gallery-container__img3{
+grid-area: img3;
+
+}
+.img-gallery-container__img4{
+grid-area: img4;
+
+}
+.img-gallery-container__img5{
+grid-area: img5;
+
+}
+.img-gallery-container__img6{
+grid-area: img6;
+
+}
+}
+
+
+
+
+
+
+
+
+@media (max-width: 500px){
+
+  .a-mainpage{
+    flex-direction: column;
+    text-align: center;
+  }
+  .a-mainpage a:last-child{
+    margin: 40px 0px 0px 0px;
+  }
+
+
+    .vision-and-mision-container__item--item1{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .info-container2__text-container{
+        margin-right: 0;
+    }
+
+    .info-container__img-gallery-container{
+        margin-top: 40px;
+    }
+
+    .info-container__btn-wapp-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-container__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+    .inner-ul{
+        margin-top: 20px;
+    }
+    .footer-container__contact-container{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:440px){
+
+  .info-container__form input{
+      height: 3rem;
+  }
+  .info-container__form textarea{
+      height: 8rem;
+  }
+}
+
+@media screen and (max-width:1100px){
+  .footer__info-container{
+    grid-template-columns: 1fr;
+    margin: 0px;
+ }
+ .footer__footer-container{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+
+ .footer-container__contact-container{
+    margin-top: 40px;
+ }
+ .inner-ul{
+     margin-top: 30px;
+ }
+}

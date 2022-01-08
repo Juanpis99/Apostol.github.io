@@ -1,0 +1,201 @@
+@media (max-width:800px){
+    .services-info-container__services-items-container{
+    flex-direction: column;
+    }
+    .services-info-container__services-items-container aside{
+        align-items: center;
+        width: 100%;
+    }
+
+    .services-items-container__img-container{
+        display: none;
+    }
+
+
+
+    .container-family-plan{
+      flex-direction: column;
+      align-items: center;
+  }
+  .container-family-plan .price-container,
+  .container-family-plan .info-price-container{
+      width: 100%;
+      margin:0px;
+     
+  }
+  .container-family-plan .price-container p{
+      margin: 15px 0px 30px 0px;
+  }
+}
+
+
+@media (max-width:600px){
+
+    .services-info-container__services-items-container
+    aside div p{
+        font-size: 1.8rem;
+    }
+
+    .services-info-container__services-items-container aside {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1fr, 12);
+      grid-gap: 20px;
+      width: 100%
+    }
+
+    /* media querie for payment methods */
+    .info-container__imgs-container{
+      grid-gap:70px;
+    }
+}
+
+
+
+@media (min-width:580px) and (max-width:900px){
+
+    .info-container__cards-container .full-spacing-item{
+        grid-column: auto/span 2;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width:440px){
+
+    /* mediaquerie for cards by */
+    .info-container__cards-container {
+      grid-template-rows: 1fr 1.5fr 1.5fr
+    }
+
+
+
+
+
+
+
+
+    .info-container__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .info-container__form input{
+        height: 3rem;
+    }
+    .info-container__form textarea{
+        height: 8rem;
+    }
+
+
+}
+
+
+
+
+    /* _______________________________________ 
+     Para el responsive del .nav-menu: */
+@media screen and (max-width:968px) {
+    .nav{
+      position: fixed;
+    }
+    .santiagoApostol-section{
+      margin-top: 200px;
+    }
+
+    
+    .nav__img-logo-container{
+      padding-left: 20px;  /* se reduce el margin de desktop (180px) */
+      margin: 0px;
+    }
+    .nav__bars{
+      display: inline-flex;
+      padding-right: 20px;
+    }
+    .nav__menu{
+      position: fixed;
+      margin-right: 0;
+      min-width: 100%;
+      min-height: calc(100vh - 90px);
+      background: #414141;
+      top: -100vh;
+      text-align: center;
+      transition: all 0.4s;
+      flex-direction: column;
+    }
+    .nav__menu li {
+      margin: 60px 0 0 0;
+      line-height: 30px;
+    }
+    .nav__menu li:first-of-type{
+        background-color: black;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav__menu li a{
+      text-align: center;
+      margin-right: 0px;
+      font-size: 2.8rem;
+    }
+  }
+@media screen and (max-width:968px) and (orientation:landscape){
+  .nav__menu{
+    overflow: scroll;
+  }
+  .nav__menu li:last-of-type{
+    margin-bottom: 60px;
+  }
+}
+
+/* _____________________________________ */
+
+.nav__menu--show{   /* para mostrar el menu dando click*/
+  top: 90px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1100px){
+
+      /* mediaQuerie for direct-by */
+      .section-directBy .info-container__cards-container  article{
+        min-height: 700px;
+      }
+
+
+
+
+
+    /* mediaQuerie for footer */
+    .footer__info-container{
+      grid-template-columns: 1fr;
+      margin: 0px;
+   }
+   .footer__footer-container{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+
+   .footer-container__contact-container{
+      margin-top: 40px;
+   }
+   .inner-ul{
+       margin-top: 30px;
+   }
+}
+
+@media screen and (min-width:760px) and (max-width:990px){
+  .info-container__imgs-container :last-child{
+    grid-column: 2/3;
+  }
+}
